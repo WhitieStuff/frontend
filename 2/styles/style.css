@@ -219,43 +219,43 @@
     background: #ffffff66;
 }
 
-.garantee {
+.guarantee {
     padding: 50px 0;
 }
 
-.garantee__title {
+.guarantee__title {
     font-weight: 400;
     font-size: 40px;
     margin-bottom: 50px;
 }
 
-.garantee__grid {
+.guarantee__grid {
     display: grid;
     grid-template-columns: 300px auto;
     gap: 50px;
 }
 
-.garantee__picture {
+.guarantee__picture {
     display: block;
     width: 300px;
     height: 100%;
     object-fit: cover;
 }
 
-.garantee__list {
+.guarantee__list {
 }
 
-.garantee__item {
+.guarantee__item {
     position: relative;
     margin-bottom: 50px;
     padding-left: 50px;
 }
 
-.garantee__item:last-child {
+.guarantee__item:last-child {
     margin-bottom: 0;
 }
 
-.garantee__item::before {
+.guarantee__item::before {
     content: " ";
     position: absolute;
     top: 10px;
