@@ -41,8 +41,12 @@
     outline: none;
 }
 
+html, body {
+    width: 100%;
+}
+
 .body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     font-family: 'OpenSans';
 }
@@ -54,6 +58,7 @@
 .section {
     width: 100%;
     max-width: 1170px;
+    padding: 0 20px;
     margin: auto;
 }
 
@@ -79,6 +84,10 @@
     padding: 5px 0;
     font-weight: bold;
     font-size: 24px;
+}
+
+.header__phone_icon, .header__menu_icon {
+    display: none;
 }
 
 .header__phone:hover, .header__phone:focus {
@@ -280,4 +289,225 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: space-between;
+}
+
+.footer {
+    padding: 50px 0;
+    background:#e2e2e2;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: 300px 300px auto;
+    gap: 50px;
+}
+
+.footer__column {
+}
+
+.footer__label {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    color: #7a7a7a;
+}
+
+.footer__label:first-child {
+    margin-top: 0;
+}
+
+.footer__info {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    color: #0a1117;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+a.footer__info:hover, a.footer__info:focus {
+    color: #fab702;
+}
+
+.footer__address::before, .footer__email::before, .footer__phone::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 36px;
+    width: 36px;
+    background: url(../assets/images/location.png) no-repeat;
+    background-size: contain;
+}
+
+.footer__email::before {
+    background-image: url(../assets/images/email.png);
+}
+
+.footer__phone::before {
+    background-image: url(../assets/images/phone.png);
+}
+
+
+.footer__socials {
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.footer__social {
+    margin-right: 20px;
+}
+
+.footer__socials img {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.footer__socials img:hover {
+    filter: invert(30%);
+}
+
+.footer__map {
+    min-width: 300px;
+}
+
+@media (max-width: 1200px) {
+    .footer__inner {
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .header__inner {
+        padding: 20px 20px;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .header__phone_icon {
+        display: inline-block;
+    }
+
+    .header__menu_icon {
+        display: inline-block;
+        margin-left: 20px;
+        background: none;
+        outline: none;
+        border: none;
+        appearance: none;
+        cursor: pointer;
+    }
+
+    .header__phone_icon:hover, .header__menu_icon:hover {
+        filter: invert(70%);
+    }
+
+    .header__phone_icon::before, .header__menu_icon::before {
+        content: " ";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(../assets/images/call.png) no-repeat;
+        background-size: contain;
+    }
+
+    .header__menu_icon::before {
+        background-image: url(../assets/images/menu.png);
+    }
+
+    .header__menu {
+        position: absolute;
+        top: 56px;
+        left: 0;
+        display: block;
+        width: 100%;
+        padding: 20px 20px;
+        background: #fff;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+    .header__item {
+        display: block;
+    }
+    
+    .header__link {
+        font-size: 20px;
+        position: relative;
+        display: block;
+        padding: 10px 0;
+    }
+    .advantages__grid {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    .partners__grid {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    .footer__inner {
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: space-evenly;
+    }
+
+    .footer__column {
+    }
+
+    .footer__column:first-of-type {
+        justify-self: right;
+    }
+
+    .footer__map {
+        grid-column: 1/3;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .advantages__grid {
+        grid-template-columns: 100%;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .partners__grid {
+        grid-template-columns: 100%;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .guarantee__grid {
+        grid-template-columns: auto;
+    }
+    
+    .guarantee__picture {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
 }

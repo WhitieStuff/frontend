@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,112 +9,161 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Service</title>
 </head>
+
 <body class="body">
-    <div class="section-container header" id="header">
-        <header class="section header__inner">
+    <header class="section-container header" id="header">
+        <div class="section header__inner">
             <div class="header__left">
                 Your Logo
             </div>
             <div class="header__right">
                 <a href="tel:+74731234567" class="header__phone">+7 (473) 123-45-67</a>
-                <ul class="header__menu">
+                <a href="tel:+74731234567" class="header__phone_icon"></a>
+                <button class="header__menu_icon" id="menuButton"></button>
+                <ul class="header__menu hidden" id="menu">
                     <li class="header__item"><a href="#advantages" class="header__link">About</a></li>
                     <li class="header__item"><a href="#diagnostics" class="header__link">Services</a></li>
                     <li class="header__item"><a href="#guarantee" class="header__link">Guarantee</a></li>
                 </ul>
             </div>
-        </header>
-    </div>
-    <div class="section-container about" id="about">
-        <main class="section about__inner">
-            <h1 class="about__title">
-                We offer best servicing. <br> Check out now.
-            </h1>
-            <button class="about__button">Check out</button>
-        </main>
-    </div>
-    <div class="section-container advantages" id="advantages">
-        <main class="section advantages__inner">
-            <h1 class="advantages__title">
-                Advantages
-            </h1>
-            <div class="advantages__grid">
-                <div class="card">
-                    <img src="assets/images/advantage_01.png" alt="Advantage 1" class="card__picture">
-                    <div class="card__title">guarantee</div>
-                    <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida, tortor in porttitor luctus, augue tellus venenatis leo, ac aliquam augue sem ut sapien.</div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/advantage_02.png" alt="Advantage 2" class="card__picture">
-                    <div class="card__title">Quality</div>
-                    <div class="card__text">Aliquam erat volutpat. Phasellus pretium mattis nisi, nec tempor quam lacinia et. Vestibulum id quam quis tortor venenatis hendrerit et non neque.</div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/advantage_03.png" alt="Advantage 3" class="card__picture">
-                    <div class="card__title">Low price</div>
-                    <div class="card__text">Vestibulum cursus magna eu nisl viverra, in finibus nulla cursus. Nam venenatis dolor ac nibh posuere, ac lacinia ligula convallis.</div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/advantage_04.png" alt="Advantage 4" class="card__picture">
-                    <div class="card__title">Experience</div>
-                    <div class="card__text">Integer ac luctus nisi. Donec nisl diam, luctus ut tellus vitae, tincidunt mollis metus. Sed sed sapien quam.</div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="section-container about" id="about">
+            <div class="section about__inner">
+                <h1 class="about__title">
+                    We offer best servicing. <br> Check out now.
+                </h1>
+                <button class="about__button">Check out</button>
+            </div>
+        </div>
+        <div class="section-container advantages" id="advantages">
+            <div class="section advantages__inner">
+                <h1 class="title advantages__title">
+                    Advantages
+                </h1>
+                <div class="advantages__grid">
+                    <div class="card">
+                        <img src="assets/images/advantage_01.png" alt="Advantage 1" class="card__picture">
+                        <div class="card__title">Guarantee</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                            gravida, tortor in porttitor luctus, augue tellus venenatis leo, ac aliquam augue sem ut
+                            sapien.</div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/advantage_02.png" alt="Advantage 2" class="card__picture">
+                        <div class="card__title">Quality</div>
+                        <div class="card__text">Aliquam erat volutpat. Phasellus pretium mattis nisi, nec tempor quam
+                            lacinia et. Vestibulum id quam quis tortor venenatis hendrerit et non neque.</div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/advantage_03.png" alt="Advantage 3" class="card__picture">
+                        <div class="card__title">Low price</div>
+                        <div class="card__text">Vestibulum cursus magna eu nisl viverra, in finibus nulla cursus. Nam
+                            venenatis dolor ac nibh posuere, ac lacinia ligula convallis.</div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/advantage_04.png" alt="Advantage 4" class="card__picture">
+                        <div class="card__title">Experience</div>
+                        <div class="card__text">Integer ac luctus nisi. Donec nisl diam, luctus ut tellus vitae,
+                            tincidunt mollis metus. Sed sed sapien quam.</div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </div>
-    <div class="section-container diagnostics" id="diagnostics">
-        <main class="section diagnostics__inner">
-            <h1 class="diagnostics__title">
-                We offer free diagnostics. <br> Check out now.
-            </h1>
-            <button class="diagnostics__button">Get consultation</button>
-        </main>
-    </div>
-    <div class="section-container guarantee" id="guarantee">
-        <main class="section guarantee__inner">
-            <h1 class="guarantee__title">
-                guarantee
-            </h1>
-            <div class="guarantee__grid">
-                <img src="assets/images/repair.jpg" alt="repair" class="guarantee__picture">
-                <ul class="guarantee__list">
-                    <li class="guarantee__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida, tortor in porttitor luctus, augue tellus venenatis leo, ac aliquam augue sem ut sapien.</li>
-                    <li class="guarantee__item">Aliquam erat volutpat. Phasellus pretium mattis nisi, nec tempor quam lacinia et. Vestibulum id quam quis tortor venenatis hendrerit et non neque.</li>
-                    <li class="guarantee__item">Vestibulum cursus magna eu nisl viverra, in finibus nulla cursus. Nam venenatis dolor ac nibh posuere, ac lacinia ligula convallis. Integer ac luctus nisi. Donec nisl diam, luctus ut tellus vitae, tincidunt mollis metus. Sed sed sapien quam.</li>
-                    <li class="guarantee__item">Nullam sagittis tortor non gravida gravida. Nullam tempus risus sem, vel dictum sem tincidunt in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-                    <li class="guarantee__item">In vehicula risus nec odio vulputate, et fringilla eros facilisis. Curabitur tempus commodo nibh ut bibendum.</li>
-                </ul>
+        </div>
+        <div class="section-container diagnostics" id="diagnostics">
+            <div class="section diagnostics__inner">
+                <h1 class="diagnostics__title">
+                    We offer free diagnostics. <br> Check out now.
+                </h1>
+                <button class="diagnostics__button">Get consultation</button>
             </div>
-        </main>
-    </div>
-    <div class="section-container partners" id="partners">
-        <main class="section partners__inner">
-            <h1 class="partners__title">
-                Advantages
-            </h1>
-            <div class="partners__grid">
-                <div class="card">
-                    <a href="https://www.apc.com/ru/ru/">
-                        <img src="assets/images/partner_01.png" alt="Partner 1" class="card__picture">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://www.aq.ru/">
-                        <img src="assets/images/partner_02.png" alt="Partner 2" class="card__picture">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://epson.ru/">
-                        <img src="assets/images/partner_03.png" alt="Partner 3" class="card__picture">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://cactus-russia.ru/">
-                        <img src="assets/images/partner_04.png" alt="Partner 4" class="card__picture">
-                    </a>
+        </div>
+        <div class="section-container guarantee" id="guarantee">
+            <div class="section guarantee__inner">
+                <h1 class="title guarantee__title">
+                    Guarantee
+                </h1>
+                <div class="guarantee__grid">
+                    <img src="assets/images/repair.jpg" alt="repair" class="guarantee__picture">
+                    <ul class="guarantee__list">
+                        <li class="guarantee__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque gravida, tortor in porttitor luctus, augue tellus venenatis leo, ac aliquam
+                            augue sem ut sapien.</li>
+                        <li class="guarantee__item">Aliquam erat volutpat. Phasellus pretium mattis nisi, nec tempor
+                            quam lacinia et. Vestibulum id quam quis tortor venenatis hendrerit et non neque.</li>
+                        <li class="guarantee__item">Vestibulum cursus magna eu nisl viverra, in finibus nulla cursus.
+                            Nam venenatis dolor ac nibh posuere, ac lacinia ligula convallis. Integer ac luctus nisi.
+                            Donec nisl diam, luctus ut tellus vitae, tincidunt mollis metus. Sed sed sapien quam.</li>
+                        <li class="guarantee__item">Nullam sagittis tortor non gravida gravida. Nullam tempus risus sem,
+                            vel dictum sem tincidunt in. Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas.</li>
+                        <li class="guarantee__item">In vehicula risus nec odio vulputate, et fringilla eros facilisis.
+                            Curabitur tempus commodo nibh ut bibendum.</li>
+                    </ul>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+        <div class="section-container partners" id="partners">
+            <div class="section partners__inner">
+                <h1 class="title partners__title">
+                    Partners
+                </h1>
+                <div class="partners__grid">
+                    <div class="card">
+                        <a href="https://www.apc.com/ru/ru/">
+                            <img src="assets/images/partner_01.png" alt="Partner 1" class="card__picture">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.aq.ru/">
+                            <img src="assets/images/partner_02.png" alt="Partner 2" class="card__picture">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://epson.ru/">
+                            <img src="assets/images/partner_03.png" alt="Partner 3" class="card__picture">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://cactus-russia.ru/">
+                            <img src="assets/images/partner_04.png" alt="Partner 4" class="card__picture">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="section-container footer" id="footer">
+        <div class="section footer__inner">
+            <div class="footer__column">
+                <span class="footer__label">Address</span>
+                <span class="footer__info footer__address">Baker street, 221b</span>
+                <span class="footer__label">E-mail</span>
+                <a href="mailto:example@gmail.com" class="footer__info footer__email">example@gmail.com</a>
+            </div>
+            <div class="footer__column">
+                <span class="footer__label">Phones</span>
+                <a href="tel:+74731234567" class="footer__info footer__phone">+7 (473) 123-45-67</a>
+                <a href="tel:+74731234568" class="footer__info">+7 (473) 123-45-68</a>
+                <a href="tel:+74731234569" class="footer__info">+7 (473) 123-45-69</a>
+                <div class="footer__socials">
+                    <a href="vk.com" class="footer__social">
+                        <img src="assets/images/vk.png" alt="VK link">
+                    </a>
+                    <a href="facebook.com" class="footer__social">
+                        <img src="assets/images/facebook.png" alt="Facebook link">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505.51919061135504!2d39.198187094382746!3d51.657452352392504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2f2aa1756605%3A0x9fc7a13fbcb959da!2z0KHQvtCz0LvQsNGB0LjQtQ!5e0!3m2!1sru!2sru!4v1630393295208!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
 </body>
+
 </html>
