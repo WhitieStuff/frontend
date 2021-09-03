@@ -1,5 +1,5 @@
 # W-Slider
-To make a slider you need to attach ```w-slider.js``` and pass ```html id="w-slider"```
+To make a slider you need to attach `w-slider.js` and pass `id="w-slider"`
 
 ```html
 <div id="w-slider" multiple>
