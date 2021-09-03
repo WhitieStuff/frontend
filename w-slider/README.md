@@ -16,7 +16,7 @@ Here are the class names:
 
 ![screenshot 1](screenshots/1.jpg)
 
-##Planned to do
+## Planned to do
 * Add sliding with mouse.
 * Add attribute `infinite` that makes sliding infinite.
 * Animate end-of-slider when not `infinite`.
