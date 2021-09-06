@@ -11,7 +11,7 @@ img {
 
 @font-face {
     font-family: 'Comfortaa Light';
-    src: url(./fonts/Comfortaa-Light.ttf);
+    src: url(../fonts/Comfortaa-Light.ttf);
 }
 
 .container {

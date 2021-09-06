@@ -68,9 +68,9 @@ function handleButtonClick(event) {
 }
 
 function moveCards(direction) {
-    console.log(direction, cards[0].style.visibility)
-    if (direction === 'left' && cards[0].style.visibility === 'visible') return
-    if (direction === 'right' && cards[cards.length - 1].style.visibility === 'visible') return
+    if (!isInfinite && direction === 'left' && cards[0].style.visibility === 'visible') return
+    if (!isInfinite && direction === 'right' && cards[cards.length - 1].style.visibility === 'visible') return
+
 
     let move = cards[0].offsetWidth + 20
     if (direction === 'right') move *= -1
@@ -78,14 +78,51 @@ function moveCards(direction) {
 
     initialLeft += move
 
+    if (isInfinite && direction === 'left' && cards[0].style.visibility === 'visible') moveToStart(move)
+    if (isInfinite && direction === 'right' && cards[cards.length - 1].style.visibility === 'visible') moveToEnd(move)
+
     showAllCards()
 
     cards.forEach(card => {
-        card.offsetLeft += move
         card.style.left = `${initialLeft}px`
     })
 
     let overflowTimeout = setTimeout(hideOverflow, 400)
+}
+
+function moveToEnd (move) {
+    let length = isMultiple ? cardsOnScreen : 1
+
+    for (let i = 0; i < length; i++) {
+        let newChild = container.querySelector('.w-slider__card').cloneNode()
+        newChild.innerHTML = container.querySelector('.w-slider__card').innerHTML
+
+        container.appendChild(newChild)
+        container.removeChild(container.querySelector('.w-slider__card'))
+
+        cards.push(newChild)
+        cards.shift()
+    }
+
+    initialLeft -= move
+}
+
+function moveToStart (move) {
+    let length = isMultiple ? cardsOnScreen : 1
+
+    for (let i = 0; i < length; i++) {
+        let lastChild = container.querySelectorAll('.w-slider__card')[container.querySelectorAll('.w-slider__card').length-1]
+        let newChild = lastChild.cloneNode()
+        newChild.innerHTML = lastChild.innerHTML
+
+        container.insertBefore(newChild, container.querySelector('.w-slider__card'))
+        container.removeChild(lastChild)
+
+        cards.unshift(newChild)
+        cards.pop()
+    }
+
+    initialLeft -= move
 }
 
 function countScreens() {
@@ -95,8 +132,10 @@ function countScreens() {
 }
 
 function drawslider() {
-    let buttonLeft = new sliderButton('left', '<')
-    let buttonRight = new sliderButton('right', '>')
+    if (cards.length > cardsOnScreen) {
+        let buttonLeft = new sliderButton('left', '<')
+        let buttonRight = new sliderButton('right', '>')
+    }
 
     initialLeft = 0
     let containerWidth = (cards[0].offsetWidth + 20) * cardsOnScreen - 20
