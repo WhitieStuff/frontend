@@ -68,62 +68,66 @@ function handleButtonClick(event) {
 }
 
 function moveCards(direction) {
-    if (!isInfinite && direction === 'left' && cards[0].style.visibility === 'visible') return
-    if (!isInfinite && direction === 'right' && cards[cards.length - 1].style.visibility === 'visible') return
+    if (!isInfinite && direction === 'left' && cards[0].getAttribute('within') === 'true') return
+    if (!isInfinite && direction === 'right' && cards[cards.length - 1].getAttribute('within') === 'true') return
 
 
     let move = cards[0].offsetWidth + 20
     if (direction === 'right') move *= -1
     if (isMultiple) move *= cardsOnScreen
 
+    let lastScreenLeft = -(cards[cards.length - 1].offsetLeft + cards[cards.length - 1].offsetWidth - container.offsetWidth)
+
     initialLeft += move
 
-    if (isInfinite && direction === 'left' && cards[0].style.visibility === 'visible') moveToStart(move)
-    if (isInfinite && direction === 'right' && cards[cards.length - 1].style.visibility === 'visible') moveToEnd(move)
+    if (isInfinite && direction === 'left' && cards[0].getAttribute('within') === 'true') initialLeft = lastScreenLeft
+    if (isInfinite && direction === 'right' && cards[cards.length - 1].getAttribute('within') === 'true') initialLeft = 0
 
-    showAllCards()
+    markCardsNotOut()
 
     cards.forEach(card => {
         card.style.left = `${initialLeft}px`
     })
 
-    let overflowTimeout = setTimeout(hideOverflow, 400)
+    let markTimeout = setTimeout(markCardsOut, 400)
 }
 
-function moveToEnd (move) {
-    let length = isMultiple ? cardsOnScreen : 1
+// function moveToEnd (move) {
+//     let length = isMultiple ? cardsOnScreen : 1
 
-    for (let i = 0; i < length; i++) {
-        let newChild = container.querySelector('.w-slider__card').cloneNode()
-        newChild.innerHTML = container.querySelector('.w-slider__card').innerHTML
+//     for (let i = 0; i < length; i++) {
+//         let newChild = container.querySelector('.w-slider__card').cloneNode()
+//         newChild.innerHTML = container.querySelector('.w-slider__card').innerHTML
 
-        container.appendChild(newChild)
-        container.removeChild(container.querySelector('.w-slider__card'))
+//         container.appendChild(newChild)
+//         container.removeChild(container.querySelector('.w-slider__card'))
 
-        cards.push(newChild)
-        cards.shift()
-    }
+//         cards.push(newChild)
+//         cards.shift()
+//     }
 
-    initialLeft -= move
-}
+//     initialLeft -= move
+//     initialLeft = 0
+// }
 
-function moveToStart (move) {
-    let length = isMultiple ? cardsOnScreen : 1
+// function moveToStart (move) {
+//     let length = isMultiple ? cardsOnScreen : 1
 
-    for (let i = 0; i < length; i++) {
-        let lastChild = container.querySelectorAll('.w-slider__card')[container.querySelectorAll('.w-slider__card').length-1]
-        let newChild = lastChild.cloneNode()
-        newChild.innerHTML = lastChild.innerHTML
+//     for (let i = 0; i < length; i++) {
+//         let lastChild = container.querySelectorAll('.w-slider__card')[container.querySelectorAll('.w-slider__card').length-1]
+//         let newChild = lastChild.cloneNode()
+//         newChild.innerHTML = lastChild.innerHTML
 
-        container.insertBefore(newChild, container.querySelector('.w-slider__card'))
-        container.removeChild(lastChild)
+//         container.insertBefore(newChild, container.querySelector('.w-slider__card'))
+//         container.removeChild(lastChild)
 
-        cards.unshift(newChild)
-        cards.pop()
-    }
+//         cards.unshift(newChild)
+//         cards.pop()
+//     }
 
-    initialLeft -= move
-}
+//     initialLeft -= move
+//     initialLeft = 0
+// }
 
 function countScreens() {
     let sliderWidth = slider.offsetWidth - 100
@@ -195,18 +199,18 @@ function drawslider() {
 
     document.querySelector('head').insertBefore(style, document.querySelector('link'))
 
-    hideOverflow()
+    markCardsOut()
 }
 
-function showAllCards() {
+function markCardsNotOut() {
     cards.forEach(card => {
-        card.style.visibility = "visible"
+        card.setAttribute('within', 'true')
     })
 }
 
-function hideOverflow() {
+function markCardsOut() {
     cards.forEach(card => {
-        card.style.visibility = "visible"
-        if (card.offsetLeft < 0 || card.offsetLeft + card.offsetWidth > slider.offsetWidth) card.style.visibility = "hidden"
+        card.setAttribute('within', 'true')
+        if (card.offsetLeft < 0 || card.offsetLeft + card.offsetWidth > slider.offsetWidth) card.setAttribute('within', 'false')
     })
 }
