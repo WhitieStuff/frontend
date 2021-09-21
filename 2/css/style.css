@@ -38,11 +38,11 @@ body {
     font-family: Raleway, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.section-container {
+.section-container-main {
     width: 100%;
     background-image: url(../images/bg-2.png), url(../images/bg-1.png);
     background-repeat: no-repeat;
-    background-size: contain, contain;
+    background-size: cover, 100%;
     background-position: -121px, auto;
 }
 
@@ -53,6 +53,7 @@ body {
     padding: 55px 50px;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: bold;
@@ -144,4 +145,69 @@ body {
     opacity: .8;
     border: none;
     appearance: none;
+}
+
+.section-container-info {
+    background: #000;
+}
+
+.section-info {
+    max-width: 886px;
+    padding: 92px 20px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__disc {
+    width: 52px;
+    height: 52px;
+    border: 18px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 18px;
+}
+
+.info__title {
+    font-size: 29px;
+    margin-bottom: 36px;
+}
+
+.info__text {
+    font-size: 19px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.section-container-advantages {
+    background: #d41ae3;
+}
+
+.section-advantages {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.advantages__advantage {
+    padding: 0 5px;
+    width: 310px;
+}
+
+.advantage__img {
+    width: 65px;
+    height: 30px;
+    background: url(../images/arrows.png) no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.advantage__title {
+    font-size: 19px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.advantage__text {
+    font-size: 17px;
+    line-height: 25px;
 }
