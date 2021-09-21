@@ -221,7 +221,7 @@ img {
     width: 22.73611vw;
     height: 22.73611vw;
     background: url(../images/image-bg-2.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,4 +280,206 @@ img {
 .stat__text {
     font-size: 1.840277vw;
     max-width: 13.88vw;
+}
+
+.section-instructor {
+    padding: 0;
+    display: flex;
+}
+
+.instructor__img {
+    width: 48.611vw;
+}
+
+.instructor__container {
+    background: #6c9894;
+    padding: 0 6.5277vw 0 4.8611vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.instructor__title {
+    line-height: 6vw;
+}
+
+.instructor__text {
+    margin: 3vw 0;
+}
+
+.section-experience {
+    padding-top: 7.6388vw;
+    padding-bottom: 7.6388vw;
+    display: flex;
+    background: #f4f9f4 url(../images/bg-shape-6.png) no-repeat;
+    background-position: right center;
+    background-size: 25%;
+}
+
+.experience__img {
+    width: 40.13vw;
+}
+
+.experience__container {
+    padding-left: 11.11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience__title {
+    line-height: 6vw;
+}
+
+.experience__text {
+    margin: 3vw 0;
+}
+
+.section-pricing {
+    padding-top: 6.944vw;
+    padding-bottom: 6.944vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #6c9894;
+}
+
+.pricing__text {
+    max-width: 52.0833vw;
+    margin-bottom: 3.944vw;
+}
+
+.pricing__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pricing__price {
+    width: 25.833vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f9f4;
+    border-radius: 8px;
+    padding: 1.388vw;
+}
+
+.price__title {
+    font-size: 2.604166vw;
+    line-height: 3vw;
+}
+
+.price__img {
+    width: 7.6388vw;
+    margin-top: 1.388vw;
+    margin-bottom: 3.3vw;
+}
+
+.price__text {
+    font-size: 1.5277vw;
+    margin-bottom: 1.388vw;
+}
+
+.section-quote {
+    padding-top: 6.944vw;
+    padding-bottom: 6.944vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/bg-2.png) no-repeat;
+    background-size: cover;
+}
+
+.quote__image-container {
+    width: 28.33vw;
+    height: 28.33vw;
+    background: url(../images/image-bg-3.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote__img {
+    width: 22.8055vw;
+    height: 22.8055vw;
+}
+
+.quote__text {
+    max-width: 76.388vw;
+    font-size: 4.0277vw;
+    margin-top: 1.388vw;
+}
+
+.quote__title {
+    font-size: 4.0277vw;
+    margin-top: 1.388vw;
+}
+
+.section-subscription {
+    padding-top: 6.944vw;
+    padding-bottom: 9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #6c9894;
+}
+
+.subscription__text {
+    max-width: 52.0833vw;
+    margin-bottom: 1.388vw;
+}
+
+.subscription__email {
+    display: flex;
+    align-content: center;
+}
+
+.subscription__label {
+    display: block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    color: transparent;
+}
+
+.subscription__input {
+    padding: 2vw;
+    padding-right: 6vw;
+    width: 45.833vw;
+    height: 4.51388vw;
+    font-size: 1.73611vw;
+    border: .3vw solid transparent;
+    border-radius: 2vw;
+    color: #6c9894;
+}
+
+.subscription__input:focus, .subscription__button:focus {
+    outline: none;
+    border: .3vw solid #111;
+}
+
+.subscription__input::placeholder {
+    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+    color: #6c989480;
+}
+
+.subscription__button {
+    margin-left: -4vw;
+    display: inline-block;
+    height: 4.62388vw;
+    font-size: 1.73611vw;
+    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+    color: #6c9894;
+    padding: 0 4vw;
+    background: #f4f9f4;
+    border: .3vw solid transparent;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+.subscription__button:hover {
+    background: #efefef;
 }
