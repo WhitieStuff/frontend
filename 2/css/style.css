@@ -42,7 +42,7 @@ body {
     width: 100%;
     background-image: url(../images/bg-2.png), url(../images/bg-1.png);
     background-repeat: no-repeat;
-    background-size: cover, 100%;
+    background-size: cover, cover;
     background-position: -121px, auto;
 }
 
@@ -178,6 +178,20 @@ body {
     text-align: center;
 }
 
+.info__line {
+    background: #fff;
+    width: 160px;
+    height: 10px;
+    margin: 50px auto;
+}
+
+.info__list {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .section-container-advantages {
     background: #d41ae3;
 }
@@ -185,6 +199,8 @@ body {
 .section-advantages {
     padding: 100px 20px;
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-evenly;
 }
 
@@ -210,4 +226,60 @@ body {
 .advantage__text {
     font-size: 17px;
     line-height: 25px;
+}
+
+.section-companies {
+    padding-bottom: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.companies__company {
+    width: 345px;
+    background-color: #d41ae3;
+    padding: 60px 70px;
+}
+
+.company__title {
+    margin-bottom: 60px;
+    font-size: 17px;
+}
+
+.company__text {
+    font-size: 17px;
+    margin-bottom: 45px;
+}
+
+.company__contact {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.contact__icon {
+    width: 61px;
+    height: 61px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+}
+
+.contact__info {
+}
+
+.contact__name {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact__job {
+    font-size: 15px;
+}
+
+.section-container-image {
+    height: 365px;
+    background-image: url(../images/bg-3.png);
+    background-size: cover;
 }
