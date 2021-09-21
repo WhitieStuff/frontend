@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Lorem Ipsum</title>
+    <script defer src="./js/main.js"></script>
 </head>
 <body class="body">
     <div class="section-container-main">
@@ -14,7 +15,12 @@
             <p>
                 <a class="header__link">Home</a>
             </p>
-            <nav class="header__nav">
+            <p class="header__menu" id="toggleMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21">
+                    <path fill-rule="evenodd" fill="#ffffff" d="M0 16.999h18V21H0v-4.001zM0 8.999h18V13H0V8.999zM0 0h18v4H0V0z"/>
+                </svg>                        
+            </p>
+            <nav class="header__nav" id="menu">
                 <ul class="header__links">
                     <li class="header__item">
                         <a href="#" class="header__link">About</a>
@@ -24,11 +30,6 @@
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">Contact</a>
-                    </li>
-                    <li class="header__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21">
-                            <path fill-rule="evenodd" fill="#ffffff" d="M0 16.999h18V21H0v-4.001zM0 8.999h18V13H0V8.999zM0 0h18v4H0V0z"/>
-                        </svg>                        
                     </li>
                 </ul>
             </nav>
@@ -137,7 +138,7 @@
                 </aricle>
             </section>
         </div>
-        <div class="section-container-image">
+        <div class="section-container-image-1">
 
         </div>
         <div class="section-container-whatwedo">
@@ -155,6 +156,84 @@
                     <li class="info__item">Mission</li>
                     <li class="info__item">Photos</li>
                 </ul>
+            </section>
+        </div>
+        <div class="section-container-image-2">
+
+        </div>
+        <div class="section-container-quote">
+            <section class="section section-info">
+                <div class="info__line info__line-2"></div>
+                <p class="info__quote">“</p>
+                <p class="info__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                <h2 class="info__title info__name">
+                    David Johnson
+                </h2>
+            </section>
+        </div>
+        <div class="section-container-image-3">
+
+        </div>
+        <div class="section-container-numbers">
+            <section class="section section-numbers">
+                <h2 class="numbers__title">Some of our numbers</h2>
+                <div class="numbers__container">
+                    <article class="numbers__number">
+                        <p class="number__text">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="number__year">2019</p>
+                        <h3 class="number__title">lorem ipsum</h3>
+                    </article>
+                    <article class="numbers__number">
+                        <p class="number__text">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="number__year">2020</p>
+                        <h3 class="number__title">lorem ipsum</h3>
+                    </article>
+                    <article class="numbers__number">
+                        <p class="number__text">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="number__year">2021</p>
+                        <h3 class="number__title">lorem ipsum</h3>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div class="section-container-projects">
+            <section class="section section-projects">
+                <article class="projects__project">
+                    <p class="project__date">Projects / 20th August</p>
+                    <h3 class="project__title">Something new has just arrived</h3>
+                    <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v architecto beatae vitae dicta sunt es. omne essentiale dolor liquam.</p>
+                </article>
+                <img src="./images/project-1.png" alt="Project 1" class="projects__img">
+                <img src="./images/project-2.png" alt="Project 2" class="projects__img">
+                <article class="projects__project">
+                    <p class="project__date">Projects / 20th August</p>
+                    <h3 class="project__title">Something new has just arrived</h3>
+                    <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v architecto beatae vitae dicta sunt es. omne essentiale dolor liquam.</p>
+                </article>
+                <article class="projects__project">
+                    <p class="project__date">Projects / 20th August</p>
+                    <h3 class="project__title">Something new has just arrived</h3>
+                    <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v architecto beatae vitae dicta sunt es. omne essentiale dolor liquam.</p>
+                </article>
+                <img src="./images/project-3.png" alt="Project 3" class="projects__img">
+            </section>
+        </div>
+        <div class="section-container-about">
+            <section class="section section-about">
+                <div class="about__info">
+                    <h3 class="about__title">about</h3>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
+                </div>
+                <div class="about__contacts">
+                    <h3 class="about__title">contacts</h3>
+                    <ul class="about__list">
+                        <li class="about__item">Team</li>
+                        <li class="about__item">Join us</li>
+                        <li class="about__item">Ethic</li>
+                        <li class="about__item">Goals</li>
+                    </ul>
+                </div>
             </section>
         </div>
 </body>
