@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: BalooBhai;
+    src: url(../fonts/BalooBhai2-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: BalooBhai;
+    src: url(../fonts/BalooBhai2-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
+.green {
+    color: #6c9894;
+}
+
+.white {
+    color: #f4f9f4;
+}
+
+.centered {
+    text-align: center;
+}
+
+.title {
+    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5.1388vw;
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.048611vw;
+}
+
+.button {
+    width: 22.3611vw;
+    height: 4.51388vw;
+    border: none;
+    border-radius: 4px;
+    background-color: #6c9894;
+    text-transform: uppercase;
+    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.631944vw;
+    font-weight: bold;
+    color: #f4f9f4;
+    cursor: pointer;
+    padding-top: 0.3vw;
+}
+
+.button:hover, .button:focus {
+    background-color: #f4f9f4;
+    color: #6c9894;
+    transition: .1s;
+}
+
+.button_inverted {
+    background-color: #f4f9f4;
+    color: #6c9894;
+}
+
+.button_inverted:hover, .button_inverted:focus {
+    color: #f4f9f4;
+    background-color: #6c9894;
+    transition: .1s;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-1 {
+    background-color: #f4f9f4;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+    margin-left: 2.0833vw;
+    padding: 2.0833vw 0.90277vw 1.666vw 0.6944vw;
+    background-color: #a7d7c5;
+    width: max-content;
+}
+
+.logo__img {
+    width: 5.972222222vw;
+    height: 5.625vw;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__list {
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    background-color: #6c999421;
+    gap: 3.3vw;
+    padding-right: 3.3vw;
+}
+
+.nav__link {
+    display: inline-block;
+    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -0.11px;
+    font-size: 1.45833vw;
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.89166vw 2.0833vw 0.69166vw;
+    cursor: pointer;
+}
+
+.nav__link:hover, .nav__link:focus {
+    background-color: #6c98943a;
+}
+
+.section {
+    padding: 0 5.55vw;
+}
+
+.section-main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8vw;
+    background: url(../images/bg-shape-2.png) no-repeat;
+    background-size: 25.6944vw;
+    background-position: right bottom;
+}
+
+.main__image-container {
+    width: 45.34722vw;
+    height: 45.34722vw;
+    background: url(../images/image-bg-1.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__img {
+    width: 25.6944vw;
+    height: 25.6944vw;
+}
+
+.main__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 39.5833vw;
+}
+
+.main__title {
+    font-size: 6.8055vw;
+}
+
+.main__text {
+    max-width: 34.0277vw;
+    font-size: 1.388vw;
+    margin-top: -1.388vw;
+    margin-bottom: 2.388vw;
+}
+
+.section-classes {
+    padding-top: 8.68055vw;
+    padding-bottom: 8.68055vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #6c9894 url(../images/bg-shape-3.png) no-repeat;
+    background-size: 25.6944vw;
+    background-position: right top;
+}
+
+.classes__text {
+    max-width: 52.0833vw;
+}
+
+.classes__container {
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.classes__class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class__image-container {
+    width: 22.73611vw;
+    height: 22.73611vw;
+    background: url(../images/image-bg-2.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.class__img {
+    width: 17.8055vw;
+    height: 17.8055vw;
+}
+
+.class__title {
+    font-size: 2.604166vw;
+}
+
+.class__text {
+    max-width: 21.66vw;
+    font-size: 1.5277vw;
+}
