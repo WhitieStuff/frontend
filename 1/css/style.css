@@ -45,6 +45,7 @@ img {
 .title {
     font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5.1388vw;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
@@ -85,16 +86,9 @@ img {
     transition: .1s;
 }
 
-.container {
-    width: 100%;
-}
-
-.container-1 {
-    background-color: #f4f9f4;
-}
-
 .header {
     display: flex;
+    background-color: #f4f9f4;
 }
 
 .logo {
@@ -142,16 +136,19 @@ img {
 }
 
 .section {
-    padding: 0 5.55vw;
+    padding: 6vw 5.55vw 9vw;
+    width: 100%;
 }
 
 .section-main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 8vw;
+    padding-top: 0;
     background: url(../images/bg-shape-2.png) no-repeat;
     background-size: 20%;
     background-position: right bottom;
+    background-color: #f4f9f4;
 }
 
 .main__image-container {
@@ -174,7 +171,6 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 39.5833vw;
 }
 
 .main__title {
@@ -189,8 +185,6 @@ img {
 }
 
 .section-classes {
-    padding-top: 8.68055vw;
-    padding-bottom: 8.68055vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,6 +201,7 @@ img {
     width: 100%;
     margin-top: 4vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -242,8 +237,6 @@ img {
 }
 
 .section-stats {
-    padding-top: 6.944vw;
-    padding-bottom: 6.944vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,6 +252,7 @@ img {
 .stats__container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -336,8 +330,6 @@ img {
 }
 
 .section-pricing {
-    padding-top: 6.944vw;
-    padding-bottom: 6.944vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,6 +344,7 @@ img {
 .pricing__container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -383,8 +376,7 @@ img {
 }
 
 .section-quote {
-    padding-top: 6.944vw;
-    padding-bottom: 6.944vw;
+    padding-bottom: 7vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,8 +411,6 @@ img {
 }
 
 .section-subscription {
-    padding-top: 6.944vw;
-    padding-bottom: 9vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -482,4 +472,224 @@ img {
 
 .subscription__button:hover {
     background: #efefef;
+}
+
+@media (max-width: 768px) {
+
+    .text {
+        font-size: 4vw;
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+  
+    .button {
+        width: 44.722vw;
+        height: 9.0277vw;
+        font-size: 3.26388vw;
+        padding-top: 0.6vw;
+    }
+
+    .main__image-container {
+        width: 90.6944vw;
+        height: 90.6944vw;
+        order: 2;
+    }
+    
+    .main__img {
+        width: 51.388vw;
+        height: 51.388vw;
+    }
+
+    .main__info {
+        padding-bottom: 9vw;
+    }
+
+    .main__text {        
+        max-width: 90.6944vw;
+        margin-bottom: 4vw;
+    }
+
+    .classes__text {
+        max-width: 90.6944vw;
+        margin-bottom: 4vw;
+    }
+
+    .classes__class {
+        margin-bottom: 9vw;
+    }
+
+    .class__image-container {
+        width: 45.4722vw;
+        height: 45.4722vw;
+    }
+    
+    .class__img {
+        width: 35.611vw;
+        height: 35.611vw;
+    }
+    
+    .class__title {
+        margin-top: 2vw;
+        font-size: 5.2vw;
+    }
+    
+    .class__text {
+        max-width: 43.32vw;
+        font-size: 3vw;
+    }
+
+    .section-stats {
+        background: url(../images/bg-shape-4.png) no-repeat, url(../images/bg-3.png) no-repeat;
+        background-size: 25%, cover;
+    }
+
+    .stats__text {
+        max-width: 90.6944vw;
+    }
+
+    .stats__stat {
+        width: 45.4722vw;
+        height: 45.4722vw;
+        margin: 2vw auto 8vw;
+    }
+    
+    .stat__title {
+        font-size: 9.166vw;
+        margin-bottom: -2vw;
+    }
+    
+    .stat__text {
+        font-size: 3.68055vw;
+        max-width: 27.76vw;
+    }
+    
+    .section-instructor {
+        padding: 6vw 5.55vw 9vw;
+        justify-content: center;
+        background-color: #6c9894;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .instructor__container {
+        padding: 6vw 0 9vw;
+        align-items: center;
+    }
+    
+    .instructor__title {
+        line-height: 1.2;
+    }
+    
+    .instructor__text {
+        margin: 3vw 0 6vw;
+    }
+
+    .instructor__img {
+        width: 60vw;
+        height: 60vw;
+        object-fit: cover;
+        border-radius: 50%;
+        border: .6vw solid #f4f9f4;
+    }
+
+    .section-experience {
+        padding: 6vw 5.55vw 9vw;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .experience__img {
+        order: 2;
+        width: 60vw;
+        height: 60vw;
+        object-fit: cover;
+        border-radius: 50%;
+        border: .6vw solid #6c9894;
+    }
+
+    .experience__container {
+        padding: 0 0 9vw;
+        align-items: center;
+    }
+
+    .experience__title {
+        line-height: 1.2;
+    }
+
+    .pricing__price {
+        width: 51.66vw;
+        padding: 2.77vw;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+    }
+    
+    .price__title {
+        font-size: 5.2vw;
+        line-height: 6.3vw;
+    }
+    
+    .price__img {
+        width: 15.277vw;
+        margin-top: 2.77vw;
+        margin-bottom: 6.6vw;
+    }
+    
+    .price__text {
+        font-size: 3.1vw;
+        margin-bottom: 2.77vw;
+    }
+
+    .quote__image-container {
+        width: 56.66vw;
+        height: 56.66vw;
+    }
+    
+    .quote__img {
+        width: 45.611vw;
+        height: 45.611vw;
+    }
+    
+    .quote__text {
+        max-width: 80vw;
+        font-size: 4.0277vw;
+        margin-top: 3vw;
+    }
+    
+    .quote__title {
+        font-size: 8vw;
+        margin-top: 3vw;
+    }
+
+    .subscription__title {
+        line-height: 1.2;
+        margin-bottom: 3vw;
+    }
+
+    .subscription__text {
+        max-width: 90vw;
+        margin-bottom: 6vw;
+    }
+    
+    .subscription__input {
+        padding: 4vw;
+        padding-right: 12vw;
+        width: 50vw;
+        height: 9.0277vw;
+        font-size: 3.4722vw;
+        border-radius: 4vw;
+    }
+    
+    .subscription__button {
+        margin-left: -8vw;
+        display: inline-block;
+        height: 9.2477vw;
+        height: 9.0277vw;
+        font-size: 3.4722vw;
+        padding: 0 8vw;
+        border-radius: 4vw;
+    }
+
 }
