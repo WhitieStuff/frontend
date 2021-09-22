@@ -8,26 +8,36 @@
     <title>Yoga Class</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script defer src="js/main.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">
             <img class="logo__img" src="images/logo.png" alt="Yoga Class Logo" width="86px" height="81px" />
         </div>
-        <nav class="nav">
+        <svg class="nav__toggle" id="toggleMenu" enable-background="new 0 0 21 21" id="Glyph" version="1.1" viewBox="0 0 30 30" xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path fill="#6c9894" d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
+                id="XMLID_314_" />
+            <path fill="#6c9894" d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z"
+                id="XMLID_315_" />
+            <path fill="#6c9894" d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z"
+                id="XMLID_316_" />
+        </svg>
+        <nav class="nav mobile-hidden" id="menu">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="" class="nav__link">Home</a>
+                    <a href="#header" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="" class="nav__link">About us</a>
+                    <a href="#stats" class="nav__link">About us</a>
                 </li>
                 <li class="nav__item">
-                    <a href="" class="nav__link">Services</a>
+                    <a href="#classes" class="nav__link">Services</a>
                 </li>
                 <li class="nav__item">
-                    <a href="" class="nav__link">Contact us</a>
+                    <a href="#subscription" class="nav__link">Contact us</a>
                 </li>
             </ul>
         </nav>
@@ -46,7 +56,7 @@
             <button class="button main__button">join now</button>
         </div>
     </section>
-    <section class="section section-classes white">
+    <section class="section section-classes white" id="classes">
         <h2 class="title">Choose Class</h2>
         <p class="classes__text text centered">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -88,7 +98,7 @@
             </article>
         </div>
     </section>
-    <section class="section section-stats green">
+    <section class="section section-stats green" id="stats">
         <h2 class="title">Out Stats</h2>
         <p class="stats__text text centered">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -183,7 +193,7 @@
         </p>
         <h2 class="title quote__title">Trainer Devandra</h2>
     </section>
-    <section class="section section-subscription white centered">
+    <section class="section section-subscription white centered" id="subscription">
         <h2 class="title subscription__title">Don't miss our update</h2>
         <p class="text subscription__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
