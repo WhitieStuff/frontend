@@ -334,13 +334,11 @@ body {
 }
 
 .discount__img {
-    width: 49.79166vw;
     width: 50%;
     object-fit: cover;
 }
 
 .discount__container {
-    max-width: 50vw;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -360,13 +358,11 @@ body {
 }
 
 .promo__img {
-    width: 49.79166vw;
     width: 50%;
     object-fit: cover;
 }
 
 .promo__container {
-    max-width: 50vw;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -381,15 +377,15 @@ body {
 }
 
 .section_description {
-    padding-top: 25.6944vw;
+    padding-top: 15.6944vw;
     padding-bottom: 20.833vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../images/edge-3.png) no-repeat, url(../images/edge-4.png) no-repeat, url(../images/shadow-1.png) no-repeat;
+    background: url(../images/edge-4.png) no-repeat, url(../images/shadow-1.png) no-repeat;
     background-color: #7f7770;
-    background-size: 100%, 100%, auto 35.55vw;
-    background-position: top, bottom, left -22vw top 60%;
+    background-size: 100%, auto 35.55vw;
+    background-position: bottom, left -22vw top 60%;
 }
 
 .description__title {
@@ -526,7 +522,7 @@ body {
 }
 
 .subscription__input::placeholder {
-    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .subscription__button {
@@ -594,4 +590,248 @@ body {
     display: block;
     font-size: 1.73611vw;
     line-height: 2.77vw;
+}
+
+@media (max-width: 768px) {
+    
+
+    .title {
+        font-size: 8.055vw;
+    }
+
+    .text {
+        font-size: 4.0277vw;
+    }
+
+    .button {
+        width: 47.76vw;
+        height: 10.4166vw;
+        border-radius: 4.77vw;
+        font-size: 3.1944vw;
+        line-height: 2.9166vw;
+    }
+
+    .section_main {
+        background-image: url(../images/bg-3.png);
+        background-size: cover;
+        background-position: right;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2.6px -4.3px 5px rgba(84, 82, 79, 0.22);
+    }
+    
+    .main__title {
+        margin-top: 17.3611vw;
+        max-width: 80vw;
+        font-size: 12.6388vw;
+        color: #fff;
+    }
+    
+    .main__subtitle {
+        margin-top: 1.8vw;
+        font-size: 3.4722vw;
+        letter-spacing: .6944vw;
+    }
+    
+    .main__button {
+        margin-top: 10vw;
+        background-color: #7f7770;
+        border-color: #7f7770;
+        color: #fff;
+    }
+
+    .main__button:hover {
+        background-color: #e2a355;
+        border-color: #e2a355;
+    }
+    
+    .main__text {
+        margin-top: 6vw;
+        margin-bottom: 22.722vw;
+        max-width: 70vw;
+        font-size: 4.0277vw;
+        font-style: italic;
+        letter-spacing: .14vw;
+    }
+
+    .section_info {
+        padding-top: 12vw;
+        padding-bottom: 15vw;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(../images/shadow-1.png) no-repeat;
+        background-position: left -25vw bottom;
+        background-size: auto 35.55vw; */
+    }
+    
+    .info__text {
+        max-width: 80vw;
+        margin-top: 2.5vw;
+    }
+    
+    .info__container {
+        width: 100%;
+        margin-top: 9vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6vw;
+    }
+    
+    .info__card {
+        max-width: 47.0833vw;
+        gap: 2vw;
+    }
+    
+    .info__figure {
+        max-width: 47.0833vw;
+    }
+    
+    .info__img{
+        width: 47.0833vw;
+        height: 41.8055vw;
+    }
+    
+    .info__caption {
+        margin: auto 2.4vw;
+        max-width: 47.0833vw;
+        margin-top: 4.0277vw;
+        font-size: 4.0277vw;
+        font-weight: bold;
+    }
+    
+    .info__card-text {
+        margin: 4vw 2.4vw 8vw;
+        max-width: 47.0833vw;
+        font-size: 3.1944vw;
+    }
+    
+    .info__button {
+        margin-top: 12vw;
+    }
+
+    .section_discount {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .discount__img {
+        width: 100%;
+    }
+    
+    .discount__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vw;
+        padding-bottom: 15vw;
+        text-align: center;
+    }
+    
+    .discount__text {
+        margin-top: 6.66vw;
+        margin-bottom: 12vw;
+    }
+    
+    .section_promo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .promo__img {
+        width: 100%;
+    }
+    
+    .promo__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vw;
+        padding-bottom: 15vw;
+        text-align: center;
+    }
+    
+    .promo__text {
+        margin-top: 6.66vw;
+        margin-bottom: 12vw;
+    }
+
+    .description__text {
+        max-width: 80vw;
+        margin-top: 6.66vw;
+    }
+
+    .section_quotes {
+        padding-top: 12vw;
+        text-align: center;
+    }
+    
+    .quotes__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quotes__card {
+        width: 50vw;
+        margin-bottom: 12vw;
+    }
+    
+    .quotes__card-title {
+        font-size: 4.6vw;
+        line-height: 4.6vw;
+    }
+    
+    .quotes__card-text {
+        margin-top: 3vw;
+        font-size: 2.64vw;
+        line-height: 3.46vw;
+    }
+    
+    .quotes__quote {
+        margin-top: 0;
+    }
+    
+    .quote__sign {
+        font-size: 14vw;
+    }
+    
+    .quote__text {
+        max-width: 80vw;
+        margin-top: -4vw;
+        margin-bottom: 4vw;
+        font-size: 3.46vw;
+    }
+    
+    .quote__author {
+        font-size: 2.9vw;
+        line-height: 4.6vw;
+    }
+    
+    .subscription__text {
+        max-width: 80vw;
+        margin-bottom: 6vw;
+    }
+    
+    .subscription__input {
+        padding: 4vw;
+        padding-right: 6vw;
+        width: 70vw;
+        height: 9vw;
+        font-size: 3.46vw;
+        border-radius: 4vw;
+    }
+    
+    .subscription__button {
+        margin-left: -8vw;
+        height: 9vw;
+        font-size: 3.46vw;
+        padding: 0 4vw;
+        border-radius: 4vw;
+    }
+
 }
