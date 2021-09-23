@@ -7,16 +7,26 @@
     <title>Hiking</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     <header class="header">
         <img src="images/logo.png" alt="Logo Hiking" class="header__logo" width="90px">
+        <svg class="header__toggle" id="toggleMenu" enable-background="new 0 0 21 21" id="Glyph" version="1.1" viewBox="0 0 30 30" xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path fill="#54524f" d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
+                id="XMLID_314_" />
+            <path fill="#54524f" d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z"
+                id="XMLID_315_" />
+            <path fill="#54524f" d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z"
+                id="XMLID_316_" />
+        </svg>
         <form class="header__search">
             <label for="search" class="search__label visually-hidden">Search</label>
             <input class="search__input" type="text" name="search" id="search">
             <button class="search__button"></button>
         </form>
-        <nav class="header__nav">
+        <nav class="header__nav mobile-hidden" id="menu">
             <ul class="nav__menu">
                 <li class="nav__item">
                     <a href="#" class="nav__link" tabindex="1">Home</a>
