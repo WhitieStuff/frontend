@@ -28,6 +28,12 @@ img {
 
 @font-face {
     font-family: "Open Sans";
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans";
     src: url(../fonts/OpenSans-Bold.ttf);
     font-weight: bold;
 }
@@ -43,6 +49,13 @@ img {
     font-family: "Open Sans";
     src: url(../fonts/OpenSans-ExtraBold.ttf);
     font-weight: 900;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-ExtraBoldItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
 }
 
 .visually-hidden {
@@ -89,14 +102,15 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
+    cursor: pointer;
 }
 
-.button-orange {
+.button_orange {
     background-color: #e2a355;
     border-color: #e2a355;
 }
 
-.button-white {
+.button_white {
     background-color: #fff;
     border-color: #fff;
     color: #776c64;
@@ -105,6 +119,21 @@ img {
 .button:focus {
     outline: none;
     border-color: #000;
+}
+
+.button:hover {
+    background-color: #e2a355;
+    border-color: #e2a355;
+}
+
+.button_white:hover {
+    background-color: #e4e4e4;
+    border-color: #e4e4e4;
+}
+
+.button_orange:hover {
+    background-color: #776c64;
+    border-color: #776c64;
 }
 
 body {
@@ -136,6 +165,7 @@ body {
     font-size: 1.18055vw;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: .23611vw;
 }
 
 .nav__link:hover, .nav__link:focus {
@@ -192,7 +222,7 @@ body {
     padding: 0 5.1388vw;
 }
 
-.section-main {
+.section_main {
     background: url(../images/bg-1.png) no-repeat;
     background-size: cover;
     display: flex;
@@ -227,14 +257,18 @@ body {
     max-width: 32.98611vw;
     font-size: 1.423611vw;
     font-style: italic;
+    letter-spacing: .0715277vw;
 }
 
-.section-info {
+.section_info {
     padding-top: 9vw;
-    padding-bottom: 12.5vw;
+    padding-bottom: 12.70833vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url(../images/shadow-1.png) no-repeat;
+    background-position: left -25vw bottom;
+    background-size: auto 35.55vw;
 }
 
 .info__title {
@@ -291,4 +325,273 @@ body {
 
 .info__button {
     margin-top: 4vw;
+}
+
+.section_discount {
+    padding: 0;
+    background-color: #7f7770;
+    display: flex;
+}
+
+.discount__img {
+    width: 49.79166vw;
+    width: 50%;
+    object-fit: cover;
+}
+
+.discount__container {
+    max-width: 50vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4.3055vw;
+}
+
+.discount__text {
+    margin-top: 3.33vw;
+    margin-bottom: 3.4722vw;
+}
+
+.section_promo {
+    padding: 0;
+    background-color: #deb37e;
+    display: flex;
+}
+
+.promo__img {
+    width: 49.79166vw;
+    width: 50%;
+    object-fit: cover;
+}
+
+.promo__container {
+    max-width: 50vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4.3055vw;
+    padding-left: 9.722vw;
+}
+
+.promo__text {
+    margin-top: 3.33vw;
+    margin-bottom: 3.4722vw;
+}
+
+.section_description {
+    padding-top: 25.6944vw;
+    padding-bottom: 20.833vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/edge-3.png) no-repeat, url(../images/edge-4.png) no-repeat, url(../images/shadow-1.png) no-repeat;
+    background-color: #7f7770;
+    background-size: 100%, 100%, auto 35.55vw;
+    background-position: top, bottom, left -22vw top 60%;
+}
+
+.description__title {
+    font-weight: 600;
+}
+
+.description__text {
+    color: #dbdbdb;
+    max-width: 62.5vw;
+    margin-top: 3.33vw;
+}
+
+.section_poster {
+    background: url(../images/bg-2.png) no-repeat;
+    background-size: cover;
+    background-position: top right;
+    padding-top: 33.77vw;
+    padding-bottom: 30.55vw;
+}
+
+.poster__title {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 5.173611vw;
+}
+
+.section_quotes {
+    padding-top: 3vw;
+    background: url(../images/shadow-2.png) no-repeat;
+    background-position: right -17vw bottom;
+    background-size: auto 40.06944vw;
+}
+
+.quotes__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.quotes__card {
+    width: 25.055vw;
+}
+
+.quotes__card-title {
+    text-transform: capitalize;
+    font-size: 2.29166vw;
+    line-height: 2.29166vw;
+}
+
+.quotes__card-text {
+    margin-top: 1.5277vw;
+    color: #333d42;
+    font-size: 1.31944vw;
+    line-height: 1.73611vw;
+}
+
+.quotes__quote {
+    margin-top: 13.3611vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3f3f3f;
+}
+
+.quote__sign {
+    font-weight: bold;
+    font-size: 6.944vw;
+}
+
+.quote__text {
+    max-width: 55.55vw;
+    margin-top: -2vw;
+    margin-bottom: 2vw;
+    font-size: 1.73611vw;
+    font-weight: 600;
+}
+
+.quote__author {
+    font-size: 1.45833vw;
+    line-height: 2.29166vw;
+    font-weight: bold;
+}
+
+.section-subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22.9166vw;
+    padding-bottom: 15.9722vw;
+    background: url(../images/edge-3.png) no-repeat, url(../images/edge-5.png) no-repeat;
+    background-size: 100%, 100%;
+    background-position: top, bottom;
+    background-color: #deb37e;
+}
+
+.subscription__title {
+    font-size: 5.1388vw;
+}
+
+.subscription__text {
+    max-width: 52.0833vw;
+    margin-top: 4.166vw;
+    margin-bottom: 4.166vw;
+}
+
+.subscription__email {
+    display: flex;
+    align-content: center;
+}
+
+.subscription__label {
+    display: block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    color: transparent;
+}
+
+.subscription__input {
+    padding: 2vw;
+    padding-right: 6vw;
+    width: 45.833vw;
+    height: 4.51388vw;
+    font-size: 1.73611vw;
+    border: .3vw solid transparent;
+    border-radius: 2vw;
+}
+
+.subscription__input:focus, .subscription__button:focus {
+    outline: none;
+    border: .3vw solid #111;
+}
+
+.subscription__input::placeholder {
+    font-family: BalooBhai, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subscription__button {
+    margin-left: -4vw;
+    display: inline-block;
+    height: 4.62388vw;
+    font-size: 1.73611vw;
+    padding: 0 4vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #54524f;
+    border: .3vw solid transparent;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+.subscription__button:hover {
+    background: #e2a355;
+}
+
+.footer {
+    padding-top: 23.611vw;
+    padding-bottom: 23.611vw;
+    background: #7f7770 url(../images/edge-1.png) no-repeat;
+    background-size: 100%;
+    background-position: top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__about {
+    max-width: 31.73611vw;
+    margin-right: 11.66vw;
+}
+
+.footer__socials {
+    margin-top: 1.8055vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.footer__img {
+    width: 2.9166vw;
+    height: 2.9166vw;
+    object-fit: contain;
+}
+
+.footer__title {
+    font-size: 2.0833vw;
+    margin-bottom: 1.8055vw;
+}
+
+.footer__text {
+    flex-wrap: wrap;
+    font-size: 1.73611vw;
+}
+
+.footer__column {
+    margin-left: 0 4vw;
+}
+
+.footer__link {
+    display: block;
+    font-size: 1.73611vw;
+    line-height: 2.77vw;
 }
